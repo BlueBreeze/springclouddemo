@@ -1,0 +1,20 @@
+server:
+  port: 8766
+
+spring:
+  application:
+    name: service-blue
+  zipkin:
+    base-url: http://localhost:9411
+  devtools:
+    restart:
+      enabled: true
+      addtional-paths: src/main/java
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
+
